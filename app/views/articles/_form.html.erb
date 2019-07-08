@@ -1,0 +1,21 @@
+<%= form_with model: @article, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title, :class => 'input'%>
+  </p>
+  <br>
+  <p>
+    <%= form.label :subtitle %><br>
+    <%= form.text_field :subtitle, :class => 'input'%>
+  </p>
+  <br>
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content, :class => 'textarea' %>
+  </p>
+  <br>
+  <p>
+    <%= form.submit :valider, :class => 'button is-primary' %>
+  </p>
+<% end %>
+
